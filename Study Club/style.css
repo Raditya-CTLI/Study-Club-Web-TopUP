@@ -1,0 +1,107 @@
+/* --- Perubahan Skema Warna Menjadi Ungu Super Gelap --- */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  /* KUNCI: BACKGROUND UNGU SUPER GELAP */
+  background-color: #1a1023; /* Ungu gelap kehitaman */
+  margin: 0;
+  padding: 0;
+  color: #e0e0e0; /* Warna teks diubah menjadi terang agar terlihat */
+}
+
+/* Header dengan Warna Ungu Tua */
+header {
+  /* Dipertahankan warna ungu gelap yang berbeda dari background body */
+  background-color: #38244f; 
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Bayangan lebih gelap */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+}
+
+/* Footer dengan Warna Ungu Sedang */
+footer {
+  /* Dipertahankan warna yang kontras dengan body */
+  background-color: #38244f; 
+  color: #e0e0e0;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px; 
+  font-size: 0.9em;
+}
+
+/* --- Pengaturan Grid dan Kartu Gambar (Tetap Dipertahankan) --- */
+
+.container.grid {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+  gap: 25px; 
+}
+
+/* Styling untuk setiap kartu game (link <a>) */
+.game-card {
+  display: block; 
+  /* Border disesuaikan agar tetap terlihat di background gelap */
+  border: 4px solid #7c5c9a; /* Ungu terang/lavender */
+  border-radius: 15px; 
+  overflow: hidden; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Bayangan lebih gelap */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Kunci: Background kartu diubah agar tidak putih, tapi ungu gelap */
+  background-color: #2e1e3b; 
+}
+
+/* Mengatur Gambar Agar Setara dan Lebih Besar */
+.game-card img {
+  width: 100%; 
+  height: 220px; 
+  object-fit: cover; 
+  display: block;
+}
+
+/* Efek Hover (Saat Kursor Menunjuk) */
+.game-card:hover {
+  transform: translateY(-5px) scale(1.03); 
+  /* Bayangan dengan warna ungu yang menonjol */
+  box-shadow: 0 12px 24px rgba(124, 92, 154, 0.6); 
+  border-color: #b39ddb; /* Border berubah menjadi ungu yang lebih terang */
+}
+/* Styling untuk Footer */
+footer {
+  /* KUNCI: Membuat footer terpaku (fixed) */
+  position: fixed; 
+  
+  /* Memastikan footer berada di bagian BAWAH layar */
+  bottom: 0; 
+  
+  /* Memastikan footer mengisi seluruh lebar layar */
+  left: 0; 
+  right: 0;
+  
+  /* Menambahkan lebar 100% untuk kepastian */
+  width: 100%; 
+  
+  /* Warna latar belakang dan teks (sesuai dark mode ungu) */
+  background-color: #38244f; 
+  color: #e0e0e0;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9em;
+  
+  /* Menetapkan z-index tinggi agar footer selalu di atas konten lain */
+  z-index: 1000; 
+  
+  /* Hilangkan margin-top yang tidak diperlukan lagi untuk fixed footer */
+  margin-top: 0;
+}

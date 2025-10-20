@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Up Mobile Legends</title>
+  <link rel="stylesheet" href="ml.css">
+</head>
+<body>
+  <header>
+    <h1>Top Up Mobile Legends</h1>
+  </header>
+
+  <div class="container">
+    <h2>Pilih Paket Diamonds 💎</h2>
+
+    <div class="grid">
+      <div class="diamond-card best">
+        <div class="tag">⭐ BEST SELLER</div>
+        <h3>5 Diamonds</h3>
+        <img src="dm.webp" alt="Diamond">
+        <p class="price">Rp 1.423</p>
+        <p class="discount">-14% <span class="old">Rp 1.658</span></p>
+        <p class="reward">🎁 7 Rewards</p>
+      </div>
+
+      <div class="diamond-card">
+        <h3>12 Diamonds</h3>
+        <img src="dm.webp" alt="Diamond">
+        <p class="price">Rp 3.323</p>
+        <p class="discount">-37% <span class="old">Rp 5.263</span></p>
+        <p class="reward">🎁 16 Rewards</p>
+      </div>
+
+      <div class="diamond-card">
+        <h3>19 Diamonds</h3>
+        <img src="dm.webp" alt="Diamond">
+        <p class="price">Rp 5.223</p>
+        <p class="discount">-14% <span class="old">Rp 6.078</span></p>
+        <p class="reward">🎁 26 Rewards</p>
+      </div>
+
+      <div class="diamond-card">
+        <h3>44 Diamonds</h3>
+        <img src="dm.webp" alt="Diamond">
+        <p class="price">Rp 11.400</p>
+        <p class="discount">-14% <span class="old">Rp 13.263</span></p>
+        <p class="reward">🎁 57 Rewards</p>
+      </div>
+
+      <div class="diamond-card best">
+        <div class="tag">⭐ BEST SELLER</div>
+        <h3>296 Diamonds</h3>
+        <img src="dm.webp" alt="Diamond">
+        <p class="price">Rp 76.000</p>
+        <p class="discount">-37% <span class="old">Rp 120.316</span></p>
+        <p class="reward">🎁 380 Rewards</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <a href="Top up game/index.html" style="color: #00adb5;">← Kembali ke Beranda</a>
+  </footer>
+  </div>
+</div>
+<script>
+  const diamondCards = document.querySelectorAll('.diamond-card');
+
+  diamondCards.forEach(card => {
+    card.addEventListener('click', function() {
+      // Hapus kelas 'selected' dari semua kartu lain
+      diamondCards.forEach(c => c.classList.remove('selected'));
+
+      // Tambahkan kelas 'selected' ke kartu yang baru diklik
+      this.classList.add('selected');
+    });
+  });
+</script>
+</body>
+</html>
+</body>
+</html>
